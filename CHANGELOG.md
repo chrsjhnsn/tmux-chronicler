@@ -2,6 +2,13 @@
 
 ### master
 
+### v2.2.0, 2019-08-22
+- Made filename format more human readable (window names are now saved, date and time have separators)
+- Enhanced snapshot and logging (thanks to https://github.com/bedge)
+- Filename now consistent in messages (thanks to https://github.com/laggardkernel)
+- Documented how to define custom keybindings and paths (thanks to https://github.com/laggardkernel)
+- Renamed the logging keybinding to be consistent with others (https://github.com/Kr1ss-XD)
+
 ### v2.1.0, 2015-03-18
 - `capture-pane` gets a `-J` flag. It joins wrapped lines and preserves trailing
   spaces at each line's end.
