@@ -1,3 +1,16 @@
+# Why this fork
+
+The author of tmux-logging has, for reasons unknown, chosen not to acknowledge or accept some truly excellent community contributions to this project.
+This fork aims to be more up-to-date.
+
+Merged in are pull requests to the original project from:
+* bedge
+* laggardkernel
+* Kr1ss-XD
+* modax
+
+Thank you all for your hard work!
+
 # Tmux Logging
 
 Features:
@@ -66,11 +79,30 @@ Key binding: `prefix + alt + c`
 
 This is just a convenience key binding.
 
+### Settings
+
+  Keybindings could be customized with
+
+      set -g @logging-key "P" # Shift-p
+     set -g @screen-capture-key "M-p" # Alt-p
+     set -g @save-complete-history-key "M-P" # Alt-Shift-p
+     set -g @clear-history-key "M-c" # Alt-c
+
+  Besides, logging locations could be customized as well.
+
+      set -g @logging-path "$HOME"
+     set -g @screen-capture-path "$HOME"
+     set -g @save-complete-history-path "$HOME"
+
+  **NOTE**: `$HOME` but not tilde `~` is recommended because `~` may not be expanded correctly
+ in the shell script once it's quoted as `"~"`.
+
+
 ### Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (recommended)
 
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
-    set -g @plugin 'tmux-plugins/tmux-logging'
+    set -g @plugin 'chrsjhnsn/tmux-chronicler'
 
 Hit `prefix + I` to fetch the plugin and source it.
 
@@ -80,7 +112,7 @@ You should now have all `tmux-logging` key bindings defined.
 
 Clone the repo:
 
-    $ git clone https://github.com/tmux-plugins/tmux-logging ~/clone/path
+    $ git clone https://github.com/chrsjhnsn/tmux-chronicler ~/clone/path
 
 Add this line to the bottom of `.tmux.conf`:
 
