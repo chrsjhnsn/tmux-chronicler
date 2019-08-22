@@ -10,7 +10,7 @@ Additionally, I merged in pull requests to the original project from:
 
 Thank you all for your work!
 
-# Tmux Logging
+# Tmux Chronicler
 
 Features:
 
@@ -149,17 +149,4 @@ log as above when this plugin is used:
 
 ![proper log output](/screenshots/proper_log_output.png)
 
-### Other plugins
 
-You might also find these useful:
-
-- [resurrect](https://github.com/tmux-plugins/tmux-resurrect) - restore tmux
-  environment after system restart
-- [pain control](https://github.com/tmux-plugins/tmux-pain-control) - useful standard
-  bindings for controlling panes
-- [sessionist](https://github.com/tmux-plugins/tmux-sessionist) - lightweight
-  tmux utils for switching and creating sessions
-
-### License
-
-[MIT](LICENSE.md)
