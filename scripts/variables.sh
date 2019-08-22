@@ -23,7 +23,7 @@ clear_history_key=$(tmux show-option -gqv "@clear-history-key")
 clear_history_key=${clear_history_key:-$default_clear_history_key}
 
 # General options
-filename_suffix="#{session_name}-#{window_index}-#{pane_index}-%Y%m%dT%H%M%S.log"
+filename_suffix="#{session_name}-#{window_name}-pane#{pane_id}-%Y%m%dT%H%M%S.log"
 
 # Logging options
 default_logging_path="$HOME"
