@@ -1,7 +1,7 @@
 # Why this fork
 
 The author of tmux-logging has, for reasons unknown, chosen not to acknowledge or accept some truly excellent community contributions to this project.
-This fork aims to be more up-to-date.
+This fork aims to be more up-to-date. I've also made several changes to ensure the saved filename is more human readable.
 
 Merged in are pull requests to the original project from:
 * bedge
